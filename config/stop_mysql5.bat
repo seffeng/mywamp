@@ -1,0 +1,3 @@
+@ECHO OFF
+ECHO Shutting Down Mysql5, please wait ...
+taskkill /F /IM mysqld.exe > nul

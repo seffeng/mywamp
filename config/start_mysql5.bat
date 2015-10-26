@@ -1,0 +1,3 @@
+@ECHO OFF
+ECHO Starting Mysql5, please wait ...
+"ThisDirPath/svr/RunHiddenConsole.exe" "ThisDirPath/mysql5/bin/mysqld.exe" --defaults-file="ThisDirPath/mysql5/my.ini"

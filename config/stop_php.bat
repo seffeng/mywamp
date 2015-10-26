@@ -1,0 +1,3 @@
+@ECHO OFF
+ECHO Shutting Down Php-Cgi, please wait ...
+taskkill /F /IM php-cgi.exe > nul

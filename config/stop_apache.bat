@@ -1,0 +1,3 @@
+@ECHO OFF
+ECHO Shutting Down Apache2, please wait ...
+taskkill /F /IM httpd.exe > nul
