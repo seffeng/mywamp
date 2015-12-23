@@ -8,10 +8,10 @@ set ep=%cd:\=/%
 echo ======================================
 echo ============正在安装apache============
 echo ======================================
-echo 正在配置apache配置文件 httpd5.6.conf
-set fl=config\httpd5.6.conf
+echo 正在配置apache配置文件 httpd7.0.conf
+set fl=config\httpd7.0.conf
 call config\fun.bat
-move /y my_tmp.txt apache2\conf\httpd5.6.conf
+move /y my_tmp.txt apache2\conf\httpd7.0.conf
 
 echo 正在配置apache配置文件 httpd_temp.conf
 set fl=config\httpd_temp.conf
@@ -19,10 +19,10 @@ call config\fun.bat
 move /y my_tmp.txt apache2\conf\www\_http.conf
 
 echo ======================================
-echo 正在配置文件 start_apachephp5.6.bat
-set fl=config\start_apachephp5.6.bat
+echo 正在配置文件 start_apachephp7.0.bat
+set fl=config\start_apachephp7.0.bat
 call config\fun.bat
-move /y my_tmp.txt apache2\start_apachephp5.6.bat
+move /y my_tmp.txt apache2\start_apachephp7.0.bat
 
 echo 正在配置文件 stop_apache.bat
 set fl=config\stop_apache.bat
@@ -51,21 +51,21 @@ move /y my_tmp.txt mysql5\stop_mysql5.bat
 echo ======================================
 echo ==============正在安装php=============
 echo ======================================
-echo 正在配置Php配置文件 php5.6.ini
-set fl=config\php5.6.ini
+echo 正在配置Php配置文件 php7.0.ini
+set fl=config\php7.0.ini
 call config\fun.bat
-move /y my_tmp.txt php5.6\php.ini
+move /y my_tmp.txt php7.0\php.ini
 
 echo ======================================
-echo 正在配置文件 start_php5.6.bat
-set fl=config\start_php5.6.bat
+echo 正在配置文件 start_php7.0.bat
+set fl=config\start_php7.0.bat
 call config\fun.bat
-move /y my_tmp.txt php5.6\start_php.bat
+move /y my_tmp.txt php7.0\start_php.bat
 
 echo 正在配置文件 stop_php.bat
 set fl=config\stop_php.bat
 call config\fun.bat
-move /y my_tmp.txt php5.6\stop_php.bat
+move /y my_tmp.txt php7.0\stop_php.bat
 
 echo ======================================
 echo ============正在安装memcached=========
@@ -126,17 +126,9 @@ echo 正在配置文件 dll
 if exist %systemroot%\SysWOW64\ (
     if not exist %systemroot%\SysWOW64\msvcr71.dll ( copy config\msvcr71.dll %systemroot%\SysWOW64\ /y )
     if not exist %systemroot%\SysWOW64\msvcr100.dll ( copy config\msvcr100.dll %systemroot%\SysWOW64\ /y )
-    copy php5.6\libeay32.dll %systemroot%\SysWOW64\ /y
-    copy php5.6\libsasl.dll %systemroot%\SysWOW64\ /y
-    copy php5.6\libssh2.dll %systemroot%\SysWOW64\ /y
-    copy php5.6\ssleay32.dll %systemroot%\SysWOW64\ /y
 ) else (
     if not exist %systemroot%\System32\msvcr71.dll ( copy config\msvcr71.dll %systemroot%\System32\ /y )
     if not exist %systemroot%\System32\msvcr100.dll ( copy config\msvcr100.dll %systemroot%\System32\ /y )
-    copy php5.6\libeay32.dll %systemroot%\System32\ /y
-    copy php5.6\libsasl.dll %systemroot%\System32\ /y
-    copy php5.6\libssh2.dll %systemroot%\System32\ /y
-    copy php5.6\ssleay32.dll %systemroot%\System32\ /y
 )
 
 echo 正在配置 快捷图标

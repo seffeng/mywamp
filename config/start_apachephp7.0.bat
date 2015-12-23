@@ -1,0 +1,3 @@
+@ECHO OFF
+ECHO Starting Down Apache7.0, please wait ...
+"ThisDirPath/svr/RunHiddenConsole.exe" "ThisDirPath/apache2/bin/httpd.exe" -f "ThisDirPath/apache2/conf/httpd7.0.conf"
