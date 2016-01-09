@@ -26,4 +26,8 @@
     CD mywamp
     call start_ini.bat
 
-####12、更多版本[下载](http://pan.baidu.com/s/1kTPPZlP#path=%252Fweb_tool)。
+####12、PHP版本切换在 apache/ 文件夹里，先停止再启动。
+
+####13、网站配置文件统一放在 apache/conf/ 文件夹，修改配置后需重启 apache，配置文件参考 apache/conf/_http.conf（此文件安装完成后才会生成）。
+
+####14、更多版本[下载](http://pan.baidu.com/s/1kTPPZlP#path=%252Fweb_tool)。
