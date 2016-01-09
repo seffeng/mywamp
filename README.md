@@ -25,3 +25,5 @@
     E:
     CD mywamp
     call start_ini.bat
+
+####12、更多版本[下载](http://pan.baidu.com/s/1kTPPZlP#path=%252Fweb_tool)。
