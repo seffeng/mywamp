@@ -55,13 +55,13 @@ echo ======================================
 echo 正在配置Mysql配置文件 my.ini
 set fl=config\my.ini
 call config\fun.bat
-move /y my_tmp.txt mysql\5.5\my.ini
+move /y my_tmp.txt mysql\5.7\my.ini
 
 echo ======================================
-echo 正在配置文件 start_mysql5.5.bat
-set fl=config\start_mysql5.5.bat
+echo 正在配置文件 start_mysql5.7.bat
+set fl=config\start_mysql5.7.bat
 call config\fun.bat
-move /y my_tmp.txt mysql\start_mysql5.5.bat
+move /y my_tmp.txt mysql\start_mysql5.7.bat
 
 echo 正在配置文件 stop_mysql.bat
 set fl=config\stop_mysql.bat
